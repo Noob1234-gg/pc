@@ -343,3 +343,177 @@ header nav ul li.active::after {
 .close:hover {
     color: #a53689;
 }
+
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    header .logo {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    header nav {
+        float: none;
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    header nav ul li a,
+    header nav ul li.btn button {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    header nav ul li.active::after {
+        width: 30px;
+        height: 3px;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero {
+        padding-bottom: 40px;
+    }
+
+    .hero--info {
+        width: 100%;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .hero--info h1 {
+        font-size: 28px;
+    }
+
+    .hero--info h2 {
+        font-size: 16px;
+    }
+
+    .hero--info .btn {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .hero > img {
+        position: relative;
+        max-width: 90%;
+        margin: 20px auto 0;
+        display: block;
+        right: auto;
+        top: auto;
+    }
+
+    .dict-item {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .dict-text {
+        order: 1;
+    }
+
+    .dict-text strong {
+        font-size: 20px;
+    }
+
+    .dict-text {
+        font-size: 14px;
+    }
+
+    .dict-image {
+        order: 0;
+        width: 100%;
+    }
+
+    .dict-image img {
+        max-width: 150px;
+    }
+
+    .programs-page {
+        flex-direction: column;
+    }
+
+    .programs-list {
+        padding: 15px;
+    }
+
+    .programs-list h2 {
+        font-size: 14px;
+    }
+
+    .programs-list h2 strong {
+        font-size: 16px;
+    }
+
+    .programs-side-image {
+        position: relative;
+        top: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .modal-content h2 {
+        font-size: 20px;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        gap: 5px;
+    }
+
+    header nav ul li a,
+    header nav ul li.btn button {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .hero--info h1 {
+        font-size: 24px;
+    }
+
+    .hero--info h2 {
+        font-size: 14px;
+    }
+
+    .dict-text strong {
+        font-size: 18px;
+    }
+
+    .dict-text {
+        font-size: 12px;
+    }
+}
