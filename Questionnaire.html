@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="rus">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Анкета</title>
+        <link rel="icon" href="./img & video/logo.png">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="wrapper">    
+            <header class="container">
+                <span class="logo">✍️ Анкета</span>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./Programs.html">Программы</a></li>
+                        <li><a href="./Dictionary.html">Словарь</a></li>
+                        <li><a href="./pc.html">Таблицы</a></li>
+                        <li class="active"><a href="./Questionnaire.html">Анкета</a></li>
+                        <li class="btn"><button id="contactsBtn">Контакты</button></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="hero container">
+            <form  id="text">
+                Имя: <input type="text" name="name"><br><br>
+                Возраст: <input type="number" name="age"><br><br>
+                Какой из браузеров вы предпочитаете? <br>
+                <input type="radio" name="lang" value="Microsoft Edge"> Microsoft Edge<br>
+                <input type="radio" name="lang" value="Yandex"> Yandex<br>
+                <input type="radio" name="lang" value="Opera"> Opera<br>
+                <input type="radio" name="lang" value="Google Chrome"> Google Chrome<br>
+                <input type="radio" name="lang" value="FireFox"> FireFox<br>
+                <input type="radio" name="lang" value="Tor"> Tor<br>
+                <input type="radio" name="lang" value="Safari"> Safari<br>
+                <br class="comment">Комментарий:<br>
+                <textarea rows="10" cols="50"></textarea><br><br>
+                <input type="submit" value="Отправить"><br>
+                <input type="reset" value="Очистить"><br>
+            </form>
+            <img src="./img & video/Miku.jpg" alt="Miku">
+        </div>
+        <br>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Контакты</h2>
+                <p>📧 Emil: mailto:mailbox@provaider.ru</p>
+                <p>📞 Телефон: +7 (777) 777-77-77</p>
+                <p>📍 Адрес: оз.Байкал</p>
+            </div>
+        </div>
+        <p><footer class="container"><h4>© 2026 Всё о компьютере</h4></footer></p>
+        <script src="./Script.js"></script>
+    </body>
+</html>
